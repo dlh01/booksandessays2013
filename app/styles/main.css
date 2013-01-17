@@ -1,0 +1,11 @@
+/* Will be compiled down to a single stylesheet with your sass files */
+
+#entries {
+  width: 100%;
+}
+
+/* Get it? */
+
+.shaved {
+  margin-top: 0;
+}
