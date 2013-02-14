@@ -9,7 +9,11 @@
       <title>Books and essays 2013</title>
       <meta name="description" content="Tracking and displaying what I read in 2013 as an opportunity to practice web development.">
       <meta name="viewport" content="width=device-width">
+      <!-- <link rel="stylesheet" href="styles/foundation.min.css"> -->
       <link rel="stylesheet" href="styles/main.css">
+      <!--[if !IE><!-->
+      <link rel="stylesheet" href="styles/responsive-tables.css">
+      <!--<![endif]-->
   </head>
   <body>
     <header role="banner" class="row">
@@ -20,7 +24,7 @@
     </header><!--/role=banner-->
 
     <div class="row">
-      <section role="main" class="nine columns">
+      <section role="main" class="ten columns">
         <table id="entries">
           <thead>
             <tr>
@@ -34,7 +38,7 @@
           </tbody>
         </table>
       </section><!--/role=main-->
-      <aside role="complementary" class="three columns">
+      <aside role="complementary" class="two columns">
         <h2 class="subheader shaved">Colophon</h2>
         <ul>
           <li><a href="http://yeoman.io">Yeoman</a></li>
@@ -42,6 +46,7 @@
           <li><a href="https://github.com/jsoma/tabletop">Tabletop.js</a></li>
           <li><a href="http://handlebarsjs.com/">Handlebars.js</a></li>
           <li><a href="http://www.requirejs.org/">Require.js</a></li>
+          <li><a href="http://css-tricks.com/responsive-data-tables/">Responsive data tables</a></li>
         </ul>
       </aside><!--/role-complementary-->
     </div><!--/.row-->

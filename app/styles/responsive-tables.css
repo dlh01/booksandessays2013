@@ -1,0 +1,60 @@
+/**
+ * Responsive data tables
+ *
+ * http://css-tricks.com/responsive-data-tables/
+ */
+
+@media only screen and (max-width: 40em) {
+
+  /* Force table to not behave like a table */
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block !important;
+  }
+
+  /* Hide table headers */
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #eee;
+  }
+
+  /* Behave like a "row" */
+
+  td {
+    border: none;
+    position: relative;
+    padding-left: 35% !important;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top and left values mimic padding */
+    top: 9px;
+    left: 10px;
+    width: 30%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  /* Label the data */
+
+  td:nth-of-type(1):before { content: "Title"; }
+  td:nth-of-type(2):before { content: "Author"; }
+  td:nth-of-type(3):before { content: "Theme"; }
+  td:nth-of-type(4):before { content: "Added"; }
+
+}
+</style>
