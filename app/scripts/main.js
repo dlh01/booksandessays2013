@@ -11,5 +11,5 @@ require.config({
  
 require(['jquery', 'tabletop', 'handlebars', 'app'], function(app) {
   // use app here
-  init();
+  // init();
 });
