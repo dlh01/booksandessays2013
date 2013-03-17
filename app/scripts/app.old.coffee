@@ -15,6 +15,8 @@ init = () ->
         }
         html = template(content)
         $("#table-body").append(html)
+
+      generateStatistics(data)
    ) 
 
 init()
